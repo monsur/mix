@@ -2,14 +2,7 @@ var _DATA = {
   year: 2015,
   title: 'TwentyFifteen',
   backgroundColor: '#9cc',
-  links: {
-    download: 'twentyfifteen.zip',
-    spotify: 'https://open.spotify.com/user/suraiya773/playlist/6yrsX2WSye8gOQGtHfyqNK'
-  },
-  images: {
-    frontCover: 'front.jpg',
-    backCover: 'back.jpg'
-  },
+  spotify: 'https://open.spotify.com/user/suraiya773/playlist/6yrsX2WSye8gOQGtHfyqNK',
   tracks: [
     { src: 'tracks/01-JeffRosenstock-GetOldForever.mp3',
       title: 'Get Old Forever',
