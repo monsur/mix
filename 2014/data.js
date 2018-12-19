@@ -2,14 +2,7 @@ var _DATA = {
   year: 2014,
   title: 'TwentyFourteen',
   backgroundColor: '#606060',
-  links: {
-    download: 'twentyfourteen.zip',
-    spotify: 'http://open.spotify.com/user/monsur/playlist/6jxFVguaoKT0SrnIP7cYqm'
-  },
-  images: {
-    frontCover: 'front.jpg',
-    backCover: 'back.jpg'
-  },
+  spotify: 'http://open.spotify.com/user/monsur/playlist/6jxFVguaoKT0SrnIP7cYqm',
   tracks: [
     { src: 'tracks/01-Drowners-WaysToPhraseARejection.mp3',
       title: 'Ways to Phrase a Rejection',
