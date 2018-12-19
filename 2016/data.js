@@ -2,14 +2,7 @@ var _DATA = {
   year: 2016,
   title: 'TwentySixteen',
   backgroundColor: '#292a25',
-  links: {
-    download: 'twentysixteen.zip',
-    spotify: 'https://open.spotify.com/user/monsur/playlist/3LWMGm3PCaZIp4pHEQdkpJ'
-  },
-  images: {
-    frontCover: 'front.jpg',
-    backCover: 'back.jpg'
-  },
+  spotify: 'https://open.spotify.com/user/monsur/playlist/3LWMGm3PCaZIp4pHEQdkpJ',
   tracks: [
     { src: 'tracks/01-TeganAndSara-U-turn.mp3',
       title: 'U-turn',
