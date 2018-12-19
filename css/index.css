@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+  font-family: "Pontano Sans", "MyriadPro-Regular", "Myriad Pro Regular", MyriadPro, "Myriad Pro", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+}
+#content {
+  margin-left: auto;
+  margin-right: auto;
+}
+#albumart {
+  display: none;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#albumartback {
+  display: none;
+  float: left;
+}
+#albumartfront {
+  float: left;
+}
+#player {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  clear: both;
+}
+#playaction {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#title {
+  font-size: 24px;
+}
+#artist {
+  font-size: 16px;
+}
+#downloads {
+  padding-top: 30px;
+}
+#downloads img {
+  padding-right: 10px;
+}
+.icon {
+  border: 0;
+  height: 32px;
+  width: 32px;
+}
+
