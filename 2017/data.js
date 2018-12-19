@@ -2,9 +2,7 @@ var _DATA = {
   year: 2017,
   title: 'TwentySeventeen',
   backgroundColor: '#292a25',
-  links: {
-    spotify: 'https://open.spotify.com/user/suraiya773/playlist/66k63NE8Np6mzhY3ZSDMUm'
-  },
+  spotify: 'https://open.spotify.com/user/suraiya773/playlist/66k63NE8Np6mzhY3ZSDMUm',
   tracks: [
     { src: 'tracks/01-TheXX-OnHold.mp3',
       title: 'On Hold',

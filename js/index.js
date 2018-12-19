@@ -1,4 +1,6 @@
 (function() {
+  var frontCover = 'front.jpg';
+  var backCover = 'back.jpg';
 
   var tracks = _DATA.tracks;
 
@@ -106,7 +108,7 @@
       $('#albumartback').hide();
     } else {
       $('#albumartback').show();
-      $('#albumartfrontimg')[0].src = _DATA.images.frontCover;
+      $('#albumartfrontimg')[0].src = frontCover;
     }
     $('#albumart').css('margin-top', marginTop + 'px');
     $('.albumart').width(imgWidth + 'px');
@@ -120,8 +122,6 @@
 
   $(function() {
     var downloadLink = _DATA.title + '.zip';
-    var frontCover = 'front.jpg';
-    var backCover = 'back.jpg';
     document.title = _DATA.title;
     $('body').css('background-color', _DATA.backgroundColor);
     $('#albumartfrontimg').attr('src', frontCover)
@@ -129,7 +129,7 @@
     $('#albumartbackimg').attr('src', backCover)
         .attr('alt', _DATA.title);
     $('#downloadLink').attr('href', downloadLink);
-    $('#spotifyLink').attr('href', _DATA.links.spotify);
+    $('#spotifyLink').attr('href', _DATA.spotify);
     $('#audioplayer').attr('src', _DATA.tracks[0].src);
     $('title').text(_DATA.tracks[0].title);
     $('artist').text(_DATA.tracks[0].artist);
@@ -149,9 +149,9 @@
       if (mode != 'small') {
         return;
       }
-      var newImg = _DATA.images.frontCover;
-      if ($('#albumartfrontimg')[0].src.toLowerCase().indexOf(_DATA.images.frontCover) >= 0) {
-        newImg = _DATA.images.backCover;
+      var newImg = frontCover;
+      if ($('#albumartfrontimg')[0].src.toLowerCase().indexOf(frontCover) >= 0) {
+        newImg = backCover;
       }
       $('#albumartfrontimg')[0].src = newImg;
     });
