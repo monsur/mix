@@ -119,13 +119,16 @@
   var pauseIcon = '../images/pause.png';
 
   $(function() {
+    var downloadLink = _DATA.title + '.zip';
+    var frontCover = 'front.jpg';
+    var backCover = 'back.jpg';
     document.title = _DATA.title;
     $('body').css('background-color', _DATA.backgroundColor);
-    $('#albumartfrontimg').attr('src', _DATA.images.frontCover)
+    $('#albumartfrontimg').attr('src', frontCover)
         .attr('alt', _DATA.title);
-    $('#albumartbackimg').attr('src', _DATA.images.backCover)
+    $('#albumartbackimg').attr('src', backCover)
         .attr('alt', _DATA.title);
-    $('#downloadLink').attr('href', _DATA.links.download);
+    $('#downloadLink').attr('href', downloadLink);
     $('#spotifyLink').attr('href', _DATA.links.spotify);
     $('#audioplayer').attr('src', _DATA.tracks[0].src);
     $('title').text(_DATA.tracks[0].title);

@@ -3,12 +3,7 @@ var _DATA = {
   title: 'TwentySeventeen',
   backgroundColor: '#292a25',
   links: {
-    download: 'twentyseventeen.zip',
     spotify: 'https://open.spotify.com/user/suraiya773/playlist/66k63NE8Np6mzhY3ZSDMUm'
-  },
-  images: {
-    frontCover: 'front.jpg',
-    backCover: 'back.jpg'
   },
   tracks: [
     { src: 'tracks/01-TheXX-OnHold.mp3',
