@@ -1,0 +1,1 @@
+aws s3 sync . s3://mix.suraiyahossain.com --delete --exclude "*gitignore" --exclude "*DS_Store" --exclude "*.sh" --exclude ".git/*"
