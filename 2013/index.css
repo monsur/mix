@@ -1,0 +1,54 @@
+body {
+  padding: 0;
+  margin: 20px 0px 0px 0px;
+  background-color: #ffffff;
+  font-family: "Raleway", "MyriadPro-Regular", "Myriad Pro Regular", MyriadPro, "Myriad Pro", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+  color: #999999;
+}
+#cover {
+  margin-bottom: 20px;
+}
+.rightitems {
+  margin: 0 auto 0 auto;
+  width: 962px;
+  text-align: right;
+}
+a.menulink {
+  color: #999999;
+  background-color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 3px;
+  padding: 5px 0px 0px 4px
+}
+a.menulink:hover {
+  color: #ffffff;
+  background-color: #999999
+}
+a.menulinkhidden {
+  color: #ffffff;
+  background-color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 3px;
+  padding: 5px 0px 0px 4px
+}
+a.menulinkhidden:hover {
+  color: #ffffff;
+  background-color: #ffffff
+}
+a.menulink2 {
+  color: #999999;
+  background-color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 2px 0px 0px 1px
+}
+a.menulink2:hover {
+  color: #ffffff;
+  background-color: #999999
+}
