@@ -7,17 +7,17 @@
   var Player = function(tracks) {
     this.tracks = tracks;
     this.currentTrackId = 0;
-    this.htmlPlayer = $('#audioplayer')[0];
+    this.htmlPlayer = document.getElementById('audioplayer');
     var that = this;
     this.htmlPlayer.addEventListener('error', function() {
-      $('#playaction')[0].src = playIcon;
+      document.getElementById('playaction').src = playIcon;
       if (!that.htmlPlayer.paused) {
         that.htmlPlayer.pause();
       }
     });
     this.htmlPlayer.addEventListener('ended', function() {
       if (that.currentTrackId == that.tracks.length - 1) {
-        $('#playaction')[0].src = playIcon;
+        document.getElementById('playaction').src = playIcon;
         that.currentTrackId = 0;
         that.setCurrentSrc(0, false);
         return;
@@ -35,14 +35,14 @@
     if (isPlaying) {
       this.htmlPlayer.play();
     }
-    $('#title').text(track.title);
-    $('#artist').text(track.artist);
+    document.getElementById('title').innerHTML = track.title;
+    document.getElementById('artist').innerHTML = track.artist;
     var nextTrackText = '&nbsp;';
     if (++pos < this.tracks.length) {
       var nextTrack = this.tracks[pos];
       nextTrackText = 'Next: ' + nextTrack.title + ' - ' + nextTrack.artist;
     }
-    $('#nexttrack').html(nextTrackText);
+    document.getElementById('nexttrack').innerHTML = nextTrackText;
   };
 
   Player.prototype.togglePlay = function(callback) {
@@ -104,10 +104,10 @@
       marginTop = 60;
     }
     if (mode == 'small') {
-      $('#albumartback').hide();
+      document.getElementById('albumartback').style.display = 'none';
     } else {
-      $('#albumartback').show();
-      $('#albumartfrontimg')[0].src = frontCover;
+      document.getElementById('albumartback').style.display = 'block';
+      document.getElementById('albumartfrontimg').src = frontCover;
     }
     $('#albumart').css('margin-top', marginTop + 'px');
     $('.albumart').width(imgWidth + 'px');
@@ -121,17 +121,17 @@
     var downloadLink = _DATA.title + '.zip';
     document.title = _DATA.title;
     $('body').css('background-color', _DATA.backgroundColor);
-    $('#albumartfrontimg').attr('src', frontCover)
-        .attr('alt', _DATA.title);
-    $('#albumartbackimg').attr('src', backCover)
-        .attr('alt', _DATA.title);
-    $('#downloadLink').attr('href', downloadLink);
-    $('#spotifyLink').attr('href', _DATA.spotify);
-    $('#audioplayer').attr('src', _DATA.tracks[0].src);
-    $('title').text(_DATA.tracks[0].title);
-    $('artist').text(_DATA.tracks[0].artist);
-    $('nexttrack').text("Next: " + _DATA.tracks[1].artist + ' - ' +
-      _DATA.tracks[1].title);
+    document.getElementById('albumartfrontimg').src = frontCover;
+    document.getElementById('albumartfrontimg').alt = _DATA.title;
+    document.getElementById('albumartbackimg').src = backCover;
+    document.getElementById('albumartbackimg').alt = _DATA.title;
+    document.getElementById('downloadLink').href = downloadLink;
+    document.getElementById('spotifyLink').href = _DATA.spotify;
+    document.getElementById('audioplayer').src = _DATA.tracks[0].src;
+    document.getElementById('title').innerHTML = _DATA.tracks[0].title;
+    document.getElementById('artist').innerHTML = _DATA.tracks[0].artist;
+    document.getElementById('nexttrack').innerHTML = 'Next: ' + 
+        _DATA.tracks[1].artist + ' - ' + _DATA.tracks[1].title;
 
     resize();
 
@@ -141,16 +141,16 @@
       track('download', 1);
     });
 
-    $('#albumart').show();
+    document.getElementById('albumart').style.display = 'block';
     $('#albumart').on('click', function(evt) {
       if (mode != 'small') {
         return;
       }
       var newImg = frontCover;
-      if ($('#albumartfrontimg')[0].src.toLowerCase().indexOf(frontCover) >= 0) {
+      if (document.getElementById('albumartfrontimg').src.toLowerCase().indexOf(frontCover) >= 0) {
         newImg = backCover;
       }
-      $('#albumartfrontimg')[0].src = newImg;
+      document.getElementById('albumartfrontimg').src = newImg;
     });
 
     $('#playaction').click(function(evt) {
