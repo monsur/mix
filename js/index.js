@@ -86,7 +86,7 @@
   var mode = 'large';
   var resize = function() {
     var imgWidth, contentWidth, marginTop;
-    var viewportWidth = $(window).width();
+    var viewportWidth = window.innerWidth;
     if (viewportWidth <= 505) {
       mode = 'small';
       contentWidth = viewportWidth;
@@ -121,10 +121,10 @@
 
   var player = new Player(_DATA.tracks);
 
-  $(function() {
+  window.onload = function() {
     var downloadLink = _DATA.title + '.zip';
     document.title = _DATA.title;
-    $('body').css('background-color', _DATA.backgroundColor);
+    document.body.style.backgroundColor = _DATA.backgroundColor;
     document.getElementById('albumartfrontimg').src = frontCover;
     document.getElementById('albumartfrontimg').alt = _DATA.title;
     document.getElementById('albumartbackimg').src = backCover;
@@ -139,7 +139,7 @@
 
     resize();
 
-    $(window).resize(resize);
+    window.addEventListener('resize', resize);
 
     document.getElementById('downloadLink').addEventListener('click',
       function(evt) {
@@ -177,6 +177,6 @@
     document.getElementById('nextaction').addEventListener('click',
       function() { player.nextTrack(); }
     );
-  });
+  };
 })();
 
