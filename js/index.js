@@ -137,33 +137,42 @@
 
     $(window).resize(resize);
 
-    $('#downloadLink').click(function(evt) {
-      track('download', 1);
-    });
+    document.getElementById('downloadLink').addEventListener('click',
+      function(evt) {
+        track('download', 1);
+      });
 
     document.getElementById('albumart').style.display = 'block';
-    $('#albumart').on('click', function(evt) {
-      if (mode != 'small') {
-        return;
-      }
-      var newImg = frontCover;
-      if (document.getElementById('albumartfrontimg').src.toLowerCase().indexOf(frontCover) >= 0) {
-        newImg = backCover;
-      }
-      document.getElementById('albumartfrontimg').src = newImg;
-    });
-
-    $('#playaction').click(function(evt) {
-      player.togglePlay(function(isPlaying) {
-        var img = playIcon;
-        if (isPlaying) {
-          img = pauseIcon;
+    document.getElementById('albumart').addEventListener('click',
+      function(evt) {
+        if (mode != 'small') {
+          return;
         }
-        evt.target.src = img;
+        var newImg = frontCover;
+        if (document.getElementById('albumartfrontimg').src.toLowerCase().indexOf(frontCover) >= 0) {
+          newImg = backCover;
+        }
+        document.getElementById('albumartfrontimg').src = newImg;
       });
-    });
-    $('#prevaction').click(function() { player.previousTrack(); });
-    $('#nextaction').click(function() { player.nextTrack(); });
+
+    document.getElementById('playaction').addEventListener('click',
+      function(evt) {
+        player.togglePlay(function(isPlaying) {
+          var img = playIcon;
+          if (isPlaying) {
+            img = pauseIcon;
+          }
+          evt.target.src = img;
+        });
+      });
+
+    document.getElementById('prevaction').addEventListener('click',
+      function() { player.previousTrack(); }
+    );
+
+    document.getElementById('nextaction').addEventListener('click',
+      function() { player.nextTrack(); }
+    );
   });
 })();
 
