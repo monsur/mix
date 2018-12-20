@@ -1,8 +1,8 @@
 (function() {
   var frontCover = 'front.jpg';
   var backCover = 'back.jpg';
-
-  var tracks = _DATA.tracks;
+  var playIcon = '../images/play.png';
+  var pauseIcon = '../images/pause.png';
 
   var Player = function(tracks) {
     this.tracks = tracks;
@@ -83,7 +83,6 @@
     }
   };
 
-
   var mode = 'large';
   var resize = function() {
     var imgWidth, contentWidth, marginTop;
@@ -116,9 +115,7 @@
     $('#content').width(contentWidth + 'px');
   };
 
-  var player = new Player(tracks);
-  var playIcon = '../images/play.png';
-  var pauseIcon = '../images/pause.png';
+  var player = new Player(_DATA.tracks);
 
   $(function() {
     var downloadLink = _DATA.title + '.zip';
