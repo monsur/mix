@@ -122,14 +122,13 @@
   var player = new Player(_DATA.tracks);
 
   window.onload = function() {
-    var downloadLink = _DATA.title + '.zip';
     document.title = _DATA.title;
     document.body.style.backgroundColor = _DATA.backgroundColor;
     document.getElementById('albumartfrontimg').src = frontCover;
     document.getElementById('albumartfrontimg').alt = _DATA.title;
     document.getElementById('albumartbackimg').src = backCover;
     document.getElementById('albumartbackimg').alt = _DATA.title;
-    document.getElementById('downloadLink').href = downloadLink;
+    document.getElementById('downloadLink').href = _DATA.title + '.zip';
     document.getElementById('spotifyLink').href = _DATA.spotify;
     document.getElementById('audioplayer').src = _DATA.tracks[0].src;
     document.getElementById('title').innerHTML = _DATA.tracks[0].title;
