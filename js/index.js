@@ -109,10 +109,14 @@
       document.getElementById('albumartback').style.display = 'block';
       document.getElementById('albumartfrontimg').src = frontCover;
     }
-    $('#albumart').css('margin-top', marginTop + 'px');
-    $('.albumart').width(imgWidth + 'px');
-    $('.albumart').height(imgWidth + 'px');
-    $('#content').width(contentWidth + 'px');
+    document.getElementById('albumart').style.marginTop = marginTop + 'px';
+    document.getElementById('content').style.width = contentWidth + 'px';
+
+    var width = imgWidth + 'px';
+    document.getElementById('albumartbackimg').style.width = width;
+    document.getElementById('albumartbackimg').style.height = width;
+    document.getElementById('albumartfrontimg').style.width = width;
+    document.getElementById('albumartfrontimg').style.height = width;
   };
 
   var player = new Player(_DATA.tracks);
