@@ -161,11 +161,7 @@
     document.getElementById('playaction').addEventListener('click',
       function(evt) {
         player.togglePlay(function(isPlaying) {
-          var img = playIcon;
-          if (isPlaying) {
-            img = pauseIcon;
-          }
-          evt.target.src = img;
+          evt.target.src = isPlaying ? pauseIcon : playIcon;
         });
       });
 
