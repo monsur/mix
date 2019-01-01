@@ -40,8 +40,8 @@ var _DATA = {
       title: 'No Going Back',
       artist: 'Yuno'
     },
-    { src: 'tracks/10-joan-TakeMeOn.mp3',
-      title: 'Take Me On',
+    { src: 'tracks/10-joan-takemeon.mp3',
+      title: 'take me on',
       artist: 'joan'
     },
     { src: 'tracks/11-AndersonPaak-Tints.mp3',
@@ -60,9 +60,9 @@ var _DATA = {
       title: 'What a Bam Bam',
       artist: 'Amara La Negra'
     },
-    { src: 'tracks/15-TheCarters-Friends.mp3',
-      title: 'Friends',
-      artist: 'The Carters'
+    { src: 'tracks/15-THECARTERS-FRIENDS.mp3',
+      title: 'FRIENDS',
+      artist: 'THE CARTERS'
     }
   ]
 };
