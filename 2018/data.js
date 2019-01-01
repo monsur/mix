@@ -1,7 +1,7 @@
 var _DATA = {
   year: 2018,
   title: 'TwentyEighteen',
-  backgroundColor: '#292a25',
+  backgroundColor: '#000000',
   spotify: 'https://open.spotify.com/user/suraiya773/playlist/2s6Y3wLWVzpSv5vP9RyTHt',
   tracks: [
     { src: 'tracks/01-TroyeSivan-MyMyMy.mp3',
