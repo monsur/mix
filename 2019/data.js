@@ -1,8 +1,8 @@
 var _DATA = {
-  year: 2018,
+  year: 2019,
   title: 'TwentyNineteen',
   backgroundColor: '#000000',
-  spotify: 'https://open.spotify.com/user/suraiya773/playlist/2s6Y3wLWVzpSv5vP9RyTHt',
+  spotify: 'https://open.spotify.com/playlist/1VUZxHGBpDSF3NqpZw6aUH?si=UFhrqqaWSdaDHipUT-7Gow',
   tracks: [
     { src: 'tracks/01-Lizzo-TruthHurts.mp3',
       title: 'Lizzo',
@@ -28,7 +28,7 @@ var _DATA = {
       title: 'Clairo',
       artist: 'Bags'
     },
-    { src: 'tracks/07-LanaDelRey-TheGreatest.mp3.mp3',
+    { src: 'tracks/07-LanaDelRey-TheGreatest.mp3',
       title: 'Lana Del Rey',
       artist: 'The greatest'
     },
@@ -37,7 +37,7 @@ var _DATA = {
       artist: 'Too Much'
     },
     { src: 'tracks/09-EdSheeran-IDontCare.mp3',
-      title: 'Ed Sheeran',
+      title: 'Ed Sheeran (with Justin Bieber)',
       artist: 'I Don\'t Care'
     },
     { src: 'tracks/10-HAIM-SummerGirl.mp3',
