@@ -1,7 +1,7 @@
 var _DATA = {
   year: 2019,
   title: 'TwentyNineteen',
-  backgroundColor: '#000000',
+  backgroundColor: '#ccc',
   spotify: 'https://open.spotify.com/playlist/1VUZxHGBpDSF3NqpZw6aUH?si=UFhrqqaWSdaDHipUT-7Gow',
   tracks: [
     { src: 'tracks/01-Lizzo-TruthHurts.mp3',
